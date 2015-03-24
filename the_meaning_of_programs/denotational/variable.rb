@@ -13,6 +13,7 @@ class Variable
   # copy the output to iPython, eval(string), then
   # _({'x':2})
   # expression = Add.new(Variable.new(:x), Number.new(1))
+  # varible not work
 
   def to_py
     "lambda e: e[#{to_pyL}}] "

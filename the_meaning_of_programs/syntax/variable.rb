@@ -8,4 +8,7 @@ class Variable < Struct.new(:name)
   def inspect
     "«#{self}»"
   end
+  def to_pyL
+  	(name.to_s)[0...-1]
+  end	
 end

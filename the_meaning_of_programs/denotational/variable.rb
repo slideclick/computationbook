@@ -11,7 +11,9 @@ class Variable
   end
   # expression = Add.new(Number.new(3), Number.new(1))
   # _({'x':2})
+  # expression = Add.new(Variable.new(:x), Number.new(1))
+
   def to_py
-    "lambda e: e[#{name.inspect}] "
+    "lambda e: e[#{to_pyL}}] "
   end
 end

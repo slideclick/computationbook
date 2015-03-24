@@ -1,4 +1,4 @@
-require 'execjs/json'
+#require 'execjs/json'
 require_relative '../syntax/boolean'
 
 class Boolean

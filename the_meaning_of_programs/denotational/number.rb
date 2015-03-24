@@ -1,4 +1,4 @@
-require 'execjs/json'
+#require 'execjs/json'
 require_relative '../syntax/number'
 
 class Number
@@ -9,4 +9,9 @@ class Number
   def to_javascript
     "function (e) { return #{ExecJS::JSON.encode(value)}; }"
   end
+  
+  def to_py
+    "lambda e: #{value.inspect}"
+  end  
+  
 end
